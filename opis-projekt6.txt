@@ -1,0 +1,35 @@
+JSON:
+JSON (ang. JavaScript Object Notation) to format zapisu i wymiany danych komputerowych.
+Jest to format tekstowy, korzysta ze sk³adni JavaScriptu.
+Najczêœciej jest wykorzystywany do przekazywania i odbierania danych z serwera przez aplikacje na stronie internetowej.
+Wszystkie dane s¹ zmiennymi (nie stanowi¹ kodu wykonywalnego), a nazwy sk³adników (w³aœciwoœci) obiektów s¹ otoczone cudzys³owami.
+
+zad 1
+Nazwa endpointa zosta³a zmieniona:
+@RequestMapping(path="/bye", method = GET)
+
+zad 2
+Dodano drugi endpoint:
+@RequestMapping(path="second", method = GET)
+(dzia³anie pokazane na zdjêciu "projekt6.png")
+
+zad 3
+Zosta³ dodany parametr wieku w endpoincie "bye":
+@RequestParam(value = "age", defaultValue = "21" ) String age)
+
+zad 4
+Wiek zosta³ zadeklarowany w zadaniu wy¿ej.
+Parametr "id" liczy iloœæ wejœæ pod adres http://localhost:8080/bye, zosta³ dodany równie¿ parametr  okreœlaj¹cy wiek, JSON zwraca te 3 parametry:
+return new Greeting(counter.incrementAndGet(),String.format(template, name, age));
+(dzia³anie pokazane na zdjêciu)
+
+zad 5
+Zosta³ dodany "if", który na podstawie ostatniej litery imienia sprawdza p³eæ, poniewa¿ polskie imiona kobiecie koñcz¹ siê na literê "a".
+Dodano nowy parametr, który zwraca p³eæ w JSON w endpoincie "bye".
+(dzia³anie pokazane na zdjêciu)
+
+zad 6
+W drugim endpoincie zosta³ zadeklarowany parametr "name" oraz funkcja "if", która sprawdza czy podane imiê zawiera siê we wzorcu.
+W JSON wyœwietla siê odpowiedni komunikat.
+(dzia³anie pokazane na zdjêciu)
+
